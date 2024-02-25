@@ -1,0 +1,176 @@
+html,
+body {
+    font-family: "Lato";
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    max-width: 1260px;
+    padding: 15px;
+    margin: 0 auto;
+}
+/* ========================== */
+.header {
+    /* СДЕЛАТЬ ПОТОМ */
+    background: url("../assets/decor/shapes-bg.svg") 50% 50% / cover no-repeat, linear-gradient(55.95deg ,rgba(255, 63, 56, .2), rgba(247, 94, 5, .2));
+    font-weight: 700;
+}
+
+.header-top {
+    display: flex;
+    margin: 20px 0 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.header-top_nav-bar {
+    position: absolute;
+    left: calc(130px + 60px);
+}
+.header-top_nav-bar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.header-top_nav-bar_list:hover {
+    color: #ff3f3a;
+}
+
+.header-top_btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.5;
+    line-height: 52px;
+    padding: 0 40px;
+    color: #fff;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+.button-header {
+    margin-right: 36px;
+}
+.button-empty {
+    display: inline-block;
+    border-left: 2px solid #ff3f3a;
+    border-right: 2px solid #f75e05;
+    background-image:
+        -webkit-linear-gradient(55.95deg, #ff3f3a, #f75e05),
+        -webkit-linear-gradient(55.95deg, #ff3f3a, #f75e05);
+    background-image: linear-gradient(55.95deg, #ff3f3a, #f75e05), linear-gradient(55.95deg, #ff3f3a, #f75e05);
+    background-size: 100% 2px;
+    background-position:
+        0 100%,
+        0 0;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+.button-empty span {
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button:hover {
+    transition: transform 0.5s 0s;
+    transform: scale(1.05);
+}
+.header-top_btns-login {
+    position: relative;
+}
+.header-top_btns-login:hover {
+    color: #ff3f3a;
+}
+
+.header-top_btns-login::before {
+    position: absolute;
+    left: -28px;
+    content: "";
+    display: block;
+    background: url(../assets/icons/user-icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+/* ========================== */
+
+.header-body_top {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+    color: #1e212c;
+    height: 75vh;
+}
+
+.header-body_top-info_play-button {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.header-body_top-info{
+    margin: auto 0;
+}
+.header-body_top-info_play-button svg {
+    margin-right: 16px;
+}
+.header-body_top-info_play-button svg:hover {
+    transition: box-shadow 0.5s 0s;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 16px rgba(255, 63, 58, 0.12);
+}
+.header-body_top-info_hero-text {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    min-width: 500px;
+}
+.header-body_top-info_hero-buttons {
+    display: flex;
+    gap: 24px;
+}
+.header-body_top-info_hero-button {
+}
+.header-body_top-picture {
+    margin-right: 30px;
+}
+.header-body_statistics {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+.header-body_statistics > span {
+transform: translate(0, 20px);
+    height: 8px;
+    width: 8px;
+    background-color: #ff3f3a;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+.header-body_statistics-info {
+    /* margin-top: 189px; */
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.header-body_statistics-info span {
+    font-weight: 900;
+    font-size: 46px;
+    margin-right: 12px;
+}
